@@ -1,0 +1,4 @@
+/media/shimingzhe/StarGoBang/StarGobang/cpp/build/CMakeFiles/gobang_engine.dir
+/media/shimingzhe/StarGoBang/StarGobang/cpp/build/CMakeFiles/gobang_demo.dir
+/media/shimingzhe/StarGoBang/StarGobang/cpp/build/CMakeFiles/edit_cache.dir
+/media/shimingzhe/StarGoBang/StarGobang/cpp/build/CMakeFiles/rebuild_cache.dir
