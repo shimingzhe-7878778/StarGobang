@@ -1,0 +1,57 @@
+ # 虚拟环境文件夹（Python venv/conda）
+venv/
+env/
+.venv/
+.env/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# 虚拟环境相关
+conda-env/
+env_backup/
+
+# 系统缓存文件
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+
+# IDE配置文件（PyCharm/CLion/Vscode等）
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+*.idea/
+
+# 编译产物/可执行文件
+*.exe
+*.dll
+*.so
+*.dylib
+*.bin
+build/
+dist/
+*.egg-info/
+*.egg
+
+# 大文件/压缩包（你之前的zip包，以后不再提交）
+*.zip
+*.rar
+*.7z
+*.tar.gz
+*.gz
+
+# 日志/临时文件
+logs/
+*.log
+*.tmp
+.cache/
+
+# 其他不需要提交的文件夹
+__pycache__/
+.pytest_cache/
+.tox/
+.coverage
