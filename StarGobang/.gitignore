@@ -1,57 +1,93 @@
- # 虚拟环境文件夹（Python venv/conda）
+# ==============================================================================
+# StarGobang Project - Global .gitignore
+# ==============================================================================
+
+# Python Virtual Environments (Python 虚拟环境)
+# Location: python/.venv/, root/.venv/
+.venv/
 venv/
 env/
-.venv/
 .env/
+conda-env/
+env_backup/
+
+# Python Cache and Build Files (Python 缓存和编译产物)
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
+.Python
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.coverage
+htmlcov/
 
-# 虚拟环境相关
-conda-env/
-env_backup/
+# C++ Build Directories (C++ 编译产物)
+# Location: cpp/build/, cpp/cmake-build-*/
+cpp/build/
+cpp/cmake-build-debug/
+cpp/cmake-build-release/
+cpp/.cmake/
+cpp/Testing/
+*.exe
+*.dll
+*.obj
+*.lib
+*.a
+*.out
+*.bin
+*.dylib
 
-# 系统缓存文件
-.DS_Store
-Thumbs.db
-*.log
-*.tmp
-
-# IDE配置文件（PyCharm/CLion/Vscode等）
+# IDE Configuration Files (IDE 配置文件)
+# PyCharm, CLion, VSCode, etc.
 .idea/
 .vscode/
 *.swp
 *.swo
 *~
-*.idea/
+.DS_Store
+Thumbs.db
 
-# 编译产物/可执行文件
-*.exe
-*.dll
-*.so
-*.dylib
-*.bin
-build/
-dist/
-*.egg-info/
-*.egg
+# Logs and Temporary Files (日志和临时文件)
+# Location: python/logs/
+python/logs/
+logs/
+*.log
+*.tmp
+*.temp
+.cache/
 
-# 大文件/压缩包（你之前的zip包，以后不再提交）
+# Model Checkpoints and Training Data (模型检查点和训练数据)
+# Location: python/checkpoints/, python/models/
+python/checkpoints/*.pth
+python/checkpoints/*.onnx
+python/models/*.pth
+python/models/*.onnx
+checkpoints/
+models/
+
+# Large Binary Files (大文件和压缩包)
 *.zip
 *.rar
 *.7z
 *.tar.gz
 *.gz
+*.bz2
 
-# 日志/临时文件
-logs/
-*.log
-*.tmp
-.cache/
+# ONNX Runtime Libraries (ONNX Runtime 库，体积较大)
+onnxruntime/
 
-# 其他不需要提交的文件夹
-__pycache__/
-.pytest_cache/
+# Test Files (测试文件)
 .tox/
-.coverage
+.nox/
+coverage.xml
+.coverage.*
+
+# Backup Files (备份文件)
+*.bak
+*.backup
+*~
